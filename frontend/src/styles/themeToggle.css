@@ -1,0 +1,44 @@
+.theme-toggle{
+
+    width:52px;
+    height:40px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-pill);
+
+    background:var(--surface-soft);
+
+    color:var(--text);
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.theme-toggle:hover{
+
+    background:var(--surface-hover);
+
+    transform:translateY(-2px);
+
+}
+
+.theme-toggle:active{
+
+    transform:translateY(0);
+
+}
+
+.theme-toggle:focus-visible{
+
+    outline:none;
+
+    box-shadow:var(--focus-ring);
+
+}

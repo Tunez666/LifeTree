@@ -1,0 +1,97 @@
+.sidebar{
+    width:280px;
+    background:var(--surface-soft);
+    border-right:1px solid var(--border);
+    padding:var(--radius-xl);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar__logo{
+    font-size:28px;
+    font-weight:700;
+    color:var(--text);
+
+    margin-bottom:40px;
+}
+
+.sidebar__logo span{
+    margin-left:6px;
+    color:var(--text);
+}
+
+.sidebar__workspace{
+    margin-bottom:32px;
+}
+
+.sidebar__workspace label{
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+    color:var(--text-secondary);
+}
+
+.sidebar__workspace select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+.sidebar__workspace select:focus{
+
+    border-color:var(--accent);
+
+}
+
+.sidebar__nav{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+
+    flex:1;
+
+}
+
+.sidebar__nav a{
+
+    padding:12px 14px;
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    border-radius:var(--radius-sm);
+
+    transition:.2s;
+
+}
+
+.sidebar__nav a:hover{
+
+    background:var(--surface-hover);
+
+}
+
+.sidebar__footer{
+
+    margin-top:40px;
+
+}

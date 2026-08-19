@@ -1,0 +1,69 @@
+.auth-page{
+
+    min-height:calc(100vh - 80px);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+}
+
+.auth-card{
+
+    width:100%;
+    max-width:420px;
+
+    background:var(--surface);
+
+    padding:40px;
+
+    border-radius:var(--radius-xl);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.auth-logo{
+
+    text-align:center;
+
+    font-size:22px;
+    font-weight:600;
+
+    color:var(--text);
+
+    margin-bottom:30px;
+
+}
+
+.auth-logo span{
+
+    color:var(--accent);
+
+}
+
+.auth-card h1{
+
+    text-align:center;
+
+    font-size:30px;
+    line-height:1.2;
+
+    color:var(--text);
+
+    margin-bottom:14px;
+
+}
+
+.auth-description{
+
+    text-align:center;
+
+    color:var(--text-secondary);
+
+    margin-bottom:30px;
+
+}

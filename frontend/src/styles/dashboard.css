@@ -1,0 +1,322 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+/* ---------------- Content ---------------- */
+
+.content {
+    flex: 1;
+    padding: 50px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--text);
+}
+
+/* ---------------- Welcome ---------------- */
+
+.welcome-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    margin-bottom: 40px;
+
+    box-shadow: var(--shadow);
+}
+
+.welcome-card h2 {
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.welcome-card p {
+    color: var(--text-secondary);
+}
+
+/* ---------------- Spaces ---------------- */
+
+.spaces {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.space-card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+
+    padding: 24px;
+
+    transition: .25s;
+}
+
+.space-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+}
+
+.space-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.space-card__header h3 {
+    font-size: 22px;
+    color: var(--text);
+}
+
+.space-card__header span {
+
+    background: var(--accent-soft);
+    color: var(--accent);
+
+    padding: 6px 12px;
+
+    border-radius: var(--radius-pill);
+
+    font-size: 13px;
+}
+
+.last-task {
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.space-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.task-date {
+    color: var(--text-secondary);
+}
+
+.last-task-card {
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    background: var(--surface-soft);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-md);
+
+}
+
+.last-task-label {
+
+    font-size: 12px;
+
+    color: var(--text-muted);
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+
+    margin-bottom: 10px;
+
+}
+
+.last-task-card h4 {
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    color: var(--text);
+
+    margin-bottom: 16px;
+
+}
+
+.task-status {
+
+    padding: 5px 12px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--accent-soft);
+
+    color: var(--accent);
+
+    font-size: 13px;
+
+}
+
+.active-tasks {
+
+    margin-top: 20px;
+
+}
+
+
+.active-tasks__title {
+
+    font-size: 13px;
+
+    color: var(--text-muted);
+
+    margin-bottom: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .05em;
+
+}
+
+
+
+.task-preview {
+
+    padding: 14px 16px;
+
+    background: var(--surface-soft);
+
+    border: 1px solid var(--border-light);
+
+    border-radius: var(--radius-md);
+
+    margin-bottom: 12px;
+
+}
+
+
+.task-preview h4 {
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    margin-bottom: 12px;
+
+    color: var(--text);
+
+}
+
+
+
+.task-preview__meta {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+
+.task-status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 10px;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--accent-soft);
+
+    color: var(--accent);
+
+    font-size: 13px;
+
+}
+
+
+
+.task-date {
+
+    font-size: 13px;
+
+    color: var(--text-muted);
+
+}
+
+.space-card__link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+
+    margin-top: 20px;
+
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+
+    transition: .2s ease;
+
+}
+
+
+.space-card__link span {
+
+    transition: .2s ease;
+
+}
+
+
+
+.space-card__link:hover {
+
+    color: var(--accent-hover);
+
+}
+
+
+
+.space-card__link:hover span {
+
+    transform: translateX(3px);
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media(max-width:900px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .spaces {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+}

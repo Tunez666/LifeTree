@@ -1,0 +1,191 @@
+.auth-form {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+.auth-form input {
+
+    padding: 14px 16px;
+
+    background: var(--surface);
+
+    color: var(--text);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: .2s;
+
+}
+
+.auth-form input:focus {
+
+    border-color: var(--accent);
+
+    box-shadow: var(--focus-ring);
+
+}
+
+.auth-form button {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+
+.checkbox {
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    user-select: none;
+
+}
+
+
+/* скрываем стандартный checkbox */
+
+.checkbox input {
+
+    position: absolute;
+
+    opacity: 0;
+
+}
+
+
+/* наша коробочка */
+
+.checkbox span {
+
+    position: relative;
+
+    padding-left: 34px;
+
+}
+
+
+/* квадрат */
+
+.checkbox span::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 6px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    transition: .2s;
+
+}
+
+
+/* галочка */
+
+.checkbox span::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 7px;
+    top: 50%;
+
+    width: 6px;
+    height: 11px;
+
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+
+    transform:
+        translateY(-60%) rotate(45deg) scale(0);
+
+    transition: .2s;
+
+}
+
+
+/* активное состояние */
+
+.checkbox input:checked+span::before {
+
+    background: var(--accent);
+
+    border-color: var(--accent);
+
+}
+
+
+.checkbox input:checked+span::after {
+
+    transform:
+        translateY(-60%) rotate(45deg) scale(1);
+
+}
+
+
+/* фокус */
+
+.checkbox input:focus-visible+span::before {
+
+    box-shadow: var(--focus-ring);
+
+}
+
+.modalSelect{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid var(--border);
+    border-radius:var(--radius-sm);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+.modalSelect:focus{
+
+    border-color:var(--accent);
+}
