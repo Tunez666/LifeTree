@@ -27,7 +27,7 @@ docker compose exec backend npx prisma generate
 docker compose exec postgres psql -U LifeTree -d LifeTree
 
 --- СОЗДАНИЕ МОДУЛЯ ---
-docker compose exec backend npx nest generate module dashboard
-docker compose exec backend npx nest generate service dashboard
-docker compose exec backend npx nest generate controller dashboard
+docker compose exec backend npx nest generate module workspaces
+docker compose exec backend npx nest generate service workspaces
+docker compose exec backend npx nest generate controller workspaces
 !!! sudo chown -R $USER:$USER backend frontend !!!
