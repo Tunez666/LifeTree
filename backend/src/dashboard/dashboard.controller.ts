@@ -12,7 +12,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 
 interface AuthenticatedRequest extends Request {
   user: {
-    id: number;
+    userId: number;
   };
 }
 
@@ -26,6 +26,6 @@ export class DashboardController {
   @UseGuards(JwtAuthGuard)
   @Get()
   getDashboard(@Req() req: AuthenticatedRequest) {
-    return this.dashboardService.getDashboard(req.user.id);
+    return this.dashboardService.getDashboard(req.user.userId);
   }
 }
