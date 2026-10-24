@@ -29,5 +29,5 @@ docker compose exec postgres psql -U LifeTree -d LifeTree
 --- СОЗДАНИЕ МОДУЛЯ ---
 docker compose exec backend npx nest generate module workspaces
 docker compose exec backend npx nest generate service workspaces
-docker compose exec backend npx nest generate controller workspaces
+docker compose exec backend npx nest generate controller tasksController
 !!! sudo chown -R $USER:$USER backend frontend !!!
